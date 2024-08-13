@@ -1,9 +1,8 @@
 ---
-title: My Site
+title: eBPF Made Easy
 toc: false
 ---
 
-This is the landing page.
 
 ## Explore
 

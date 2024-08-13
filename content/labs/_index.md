@@ -1,6 +1,6 @@
 ---
-title: Documentation
-next: docs/first-page
+title: Labs
+next: labs/first-page
 ---
 
 This is a demo of the theme's documentation layout.
