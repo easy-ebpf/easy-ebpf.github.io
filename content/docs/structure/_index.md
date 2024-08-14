@@ -1,7 +1,7 @@
 ---
-title: Folder
+title: 程式結構
 type: docs
-prev: docs/first-page
+prev: docs/what-is-ebpf
 next: docs/folder/leaf
 sidebar:
   open: true

@@ -1,83 +1,33 @@
-# Hextra Starter Template
+# Easy eBPF教學網頁
 
-[![Deploy Hugo site to Pages](https://github.com/imfing/hextra-starter-template/actions/workflows/pages.yaml/badge.svg)](https://github.com/imfing/hextra-starter-template/actions/workflows/pages.yaml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6e83fd88-5ffe-4808-9689-c0f3b100bfe3/deploy-status)](https://app.netlify.com/sites/hextra-starter-template/deploys)
-![Vercel Deployment Status](https://img.shields.io/github/deployments/imfing/hextra-starter-template/production?logo=vercel&logoColor=white&label=vercel&labelColor=black&link=https%3A%2F%2Fhextra-starter-template.vercel.app%2F)
+[![Deploy Hugo site to Pages](https://github.com/easy-ebpf/easy-ebpf.github.io/actions/workflows/pages.yaml/badge.svg)](https://github.com/easy-ebpf/easy-ebpf.github.io/actions/workflows/pages.yaml)
 
+- 如果要修改內容，請先Fork，改完Push上去之後再提交PR。
 
-🐣 Minimal template for getting started with [Hextra](https://github.com/imfing/hextra)
-
-![hextra-template](https://github.com/imfing/hextra-starter-template/assets/5097752/c403b9a9-a76c-47a6-8466-513d772ef0b7)
-
-[🌐 Demo ↗](https://imfing.github.io/hextra-starter-template/)
-
-## Quick Start
-
-Use this template to create your own repository:
-
-<img src="https://docs.github.com/assets/cb-77734/mw-1440/images/help/repository/use-this-template-button.webp" width=400 />
-
-You can also quickly start developing using the following online development environment:
+## 線上修改文件內容
 
 - [GitHub Codespaces](https://github.com/codespaces) 
     
-    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/imfing/hextra-starter-template)
+    建立一個新的codespace並按照 [本地開發](#本地開發) 的指示開啟預覽。 
 
-    Create a new codespace and follow the [Local Development](#local-development) to launch the preview
-
-- [Gitpod](https://gitpod.io)
-
-    [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/imfing/hextra-starter-template)
-
-
-## Deployment
-
-### GitHub Pages
-
-A GitHub Actions workflow is provided in [`.github/workflows/pages.yaml`](./.github/workflows/pages.yaml) to [publish to GitHub Pages](https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/) for free. 
-
-For details, see [Publishing with a custom GitHub Actions workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow).
-
-Note: in the settings, make sure to set the Pages deployment source to **GitHub Actions**:
-
-<img src="https://github.com/imfing/hextra-starter-template/assets/5097752/99676430-884e-42ab-b901-f6534a0d6eee" width=600 />
-
-[Run the workflow manually](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow) if it's not triggered automatically.
-
-### Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/imfing/hextra-starter-template)
-
-### Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fimfing%2Fhextra-starter-template&env=HUGO_VERSION)
-
-Override the configuration:
-
-<img src="https://github.com/imfing/hextra-starter-template/assets/5097752/e2e3cecd-c884-47ec-b064-14f896fee08d" width=600 />
-
-## Local Development
+## 本地開發
 
 Pre-requisites: [Hugo](https://gohugo.io/getting-started/installing/), [Go](https://golang.org/doc/install) and [Git](https://git-scm.com)
 
 ```shell
 # Clone the repo
-git clone https://github.com/imfing/hextra-starter-template.git
+git clone git@github.com:easy-ebpf/easy-ebpf.github.io.git easy-ebpf
 
 # Change directory
-cd hextra-starter-template
+cd easy-ebpf
 
 # Start the server
 hugo mod tidy
 hugo server --logLevel debug --disableFastRender -p 1313
 ```
 
-### Update theme
-
-```shell
-hugo mod get -u
-hugo mod tidy
-```
-
-See [Update modules](https://gohugo.io/hugo-modules/use-modules/#update-modules) for more details.
-
+## 參考資料:
+- https://eunomia.dev/tutorials/1-helloworld/
+- https://docs.cilium.io/en/latest/bpf/toolchain/#development-environment
+- https://blog.cloudflare.com/live-patch-security-vulnerabilities-with-ebpf-lsm
+- https://ebpf-go.dev/concepts/loader/#collectionspec

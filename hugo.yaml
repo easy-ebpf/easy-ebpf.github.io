@@ -21,9 +21,6 @@ menu:
     - name: Docs
       pageRef: /docs
       weight: 1
-    - name: Labs
-      pageRef: /labs
-      weight: 2
     - name: Search
       weight: 4
       params:
