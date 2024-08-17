@@ -42,9 +42,19 @@ int handle_tp(void *ctx)
 
 ## 實作
 我們可以在下面的 LAB 進行測試這個偵測的結果(請先[注冊GitHub](https://github.com/join)):
-(LAB LINK)
+{{< cards >}}
+  {{< card link="https://codespaces.new/easy-ebpf/tutorial-minimal-example?quickstart=1" title="在GitHub Codespace中開啟LAB" icon="github" >}}
+{{< /cards >}}
 
-點進去之後，點擊 `Create Codespace` 即可開啟 LAB 環境:
-(圖)
+點進去之後，點擊 `Create new codespace` 即可開啟 LAB 環境:
+![](https://github.com/user-attachments/assets/7742f70d-2cac-43ea-b364-0306ece1c9ea)
 
-進入之後，可以依照顯示出來的 Visual Studio Code 裡的 `README.md` 進行操作。
+進入之後，可能要先等他跑一下，等左邊的檔案都有正常顯示出來之後:
+![](https://github.com/user-attachments/assets/5f62db35-c9e4-4684-a5a8-8db6d68abf4b)
+
+就可以打開 `README.md` ，並依照上面的指示，進行實驗的操作。
+
+Note: 在 LAB 的環境裡，`README.md` 裡的指令是可以直接點左邊的播放鍵執行的:
+![](https://github.com/user-attachments/assets/f43dc45c-53be-40eb-9fe6-a8cd75bbf6ae)
+
+如果沒有看到的話，可能是外掛還沒有裝完，等一下再開一次 `README.md` 這個檔案就會出現了。
